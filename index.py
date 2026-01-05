@@ -36,3 +36,6 @@ top_risk_jobs = df.sort_values(...).head(10)
 
 # Salary vs Automation Risk
 sns.scatterplot(x='Average_Salary' , y='Automation_Probability_2030')
+
+# Education level vs AI exposure
+sns.box(x="Education_Level" , y='AI_Exposure_Index')
