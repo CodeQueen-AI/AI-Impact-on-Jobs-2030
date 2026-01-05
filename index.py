@@ -7,10 +7,11 @@ import seaborn as sns
 # Seaborn Theme Set
 sns.set_theme(style = 'whitegrid')
 
-# DataSet Load
+# Load dataset
 df = pd.read_csv('AI_Impact_on_Jobs_2030.csv')
 
 # DataSet Preview
+print('First 5 Rows of the Dataset:')
 print(df.head())
 
 # Dataset Info check
