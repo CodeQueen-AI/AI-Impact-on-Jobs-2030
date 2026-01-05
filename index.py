@@ -30,11 +30,19 @@ print(df.isnull().sum())
 
 # Risk Category Distribution
 plt.figure()
-sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
-plt.title('Automation Probability Distribution by 2030')
+sns.countplot(x='Risk_Category' , data=df)
+plt.title('AI Job Risk Category Distibution 2030')
 plt.xlabel('Automation Probability')
 plt.ylabel('Frequency')
 plt.show()
+
+
+# plt.figure()
+# sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
+# plt.title('Automation Probability Distribution by 2030')
+# plt.xlabel('Automation Probability')
+# plt.ylabel('Frequency')
+# plt.show()
 
 
 # # Automation probability distribution
