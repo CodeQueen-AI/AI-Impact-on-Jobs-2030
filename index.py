@@ -37,12 +37,12 @@ print(df.isnull().sum())
 # plt.show()
 
 # Automation probability distribution
-plt.figure()
-sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
-plt.title('Automation Probability Distribution by 2030')
-plt.xlabel('Automation Probability')
-plt.ylabel('Frequency')
-plt.show()
+# plt.figure()
+# sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
+# plt.title('Automation Probability Distribution by 2030')
+# plt.xlabel('Automation Probability')
+# plt.ylabel('Frequency')
+# plt.show()
 
 
 # # Top 10 Risky Jobs
