@@ -67,14 +67,14 @@ plt.xlabel("Average Salary")
 plt.ylabel("Automation Probability")
 plt.show()
 
-# AI Exposure Index by Education Level
-# plt.figure(figsize=(10,6))
-# education_colors = ["#FF5733", "#33FF57", "#FFC300", "#FF33A6"]
-# sns.boxplot(x="Education_Level", y="AI_Exposure_Index", data=df, palette=education_colors)
-# plt.title("AI Exposure Index by Education Level")
-# plt.xlabel("Education Level")
-# plt.ylabel("AI Exposure Index")
-# plt.show()
+# Plot 05 : AI Exposure Index by Education Level
+plt.figure(figsize=(10,6))
+education_colors = ["#FF5733", "#33FF57", "#FFC300", "#FF33A6"]
+sns.boxplot(x="Education_Level", y="AI_Exposure_Index", data=df, palette=education_colors)
+plt.title("AI Exposure Index by Education Level")
+plt.xlabel("Education Level")
+plt.ylabel("AI Exposure Index")
+plt.show()
 
 # Tech Growth vs AI Exposure
 # plt.figure()
