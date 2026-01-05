@@ -62,3 +62,8 @@ This plot shows the relationship between salary and automation risk
 <!-- Education level vs AI exposure -->
 Education ka AI exposure pe impact
 We analyze how education level affects AI exposure
+
+<!-- Tech Growth vs AI Exposure -->
+Fast growing tech = zyada AI exposure?
+This helps us understand the role of technology growth
+
