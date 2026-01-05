@@ -54,19 +54,18 @@ plt.xlabel("Automation Probability")
 plt.ylabel("Job Title")
 plt.show()
 
-# Salary vs Automation Risk
-# plt.figure(figsize=(10,6))
-# custom_colors = {
-#     "Low": "#33FF57",     
-#     "Medium": "#FFC300",  
-#     "High": "#FF5733"  
-# }
-
-# sns.scatterplot(x="Average_Salary", y="Automation_Probability_2030", hue="Risk_Category", data=df, palette=custom_colors, s=50)
-# plt.title("Average Salary vs Automation Risk")
-# plt.xlabel("Average Salary")
-# plt.ylabel("Automation Probability")
-# plt.show()
+# Plot 04 : Salary vs Automation Risk
+plt.figure(figsize=(10,6))
+custom_colors = {
+    "Low": "#33FF57",     
+    "Medium": "#FFC300",  
+    "High": "#FF5733"  
+}
+sns.scatterplot(x="Average_Salary", y="Automation_Probability_2030", hue="Risk_Category", data=df, palette=custom_colors, s=50)
+plt.title("Average Salary vs Automation Risk")
+plt.xlabel("Average Salary")
+plt.ylabel("Automation Probability")
+plt.show()
 
 # AI Exposure Index by Education Level
 # plt.figure(figsize=(10,6))
