@@ -19,9 +19,11 @@ print('Dataset Information:')
 print(df.info())
 
 # Statistical Summary
+print('Statistical Summary:')
 print(df.describe())
 
 # Check the Missing Values
+print('Missing Values Check')
 print(df.isnull().sum())
 
 # EDA RREAL ANALYSIS
