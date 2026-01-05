@@ -79,19 +79,28 @@ print(df.isnull().sum())
 # plt.show()
 
 # Tech Growth vs AI Exposure
-plt.figure()
-sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index' , data=df)
-plt.title("Tech Growth Factor vs AI Exposure Index")
-plt.xlabel("Tech Growth Factor")
-plt.ylabel("AI Exposure Index")
-plt.show()
+# plt.figure()
+# sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index' , data=df)
+# plt.title("Tech Growth Factor vs AI Exposure Index")
+# plt.xlabel("Tech Growth Factor")
+# plt.ylabel("AI Exposure Index")
+# plt.show()
 
-# # NUMPY ANALYSIS
+# NUMPY BASED ANALYSIS
 
-# # Automation Risk Numbers
-# np.mean(...)
-# np.max(...)
-# np.min(...)
+avg_automation = np.mean(df["Automation_Probability_2030"])
+max_automation = np.max(df["Automation_Probability_2030"])
+min_automation = np.min(df["Automation_Probability_2030"])
 
-# # Conclusion Print
-# print('AI Impact Varies')
+print("\n--- Automation Risk Statistics ---")
+print("Average Automation Probability:", avg_automation)
+print("Maximum Automation Probability:", max_automation)
+print("Minimum Automation Probability:", min_automation)
+
+# Final Result 
+print("\n--- Key Insights from EDA ---")
+print("• AI impact varies significantly across different job roles.")
+print("• Some high-paying jobs also face automation risk.")
+print("• Education level influences AI exposure but does not eliminate risk.")
+print("• Jobs will evolve with AI rather than completely disappear.")
+print("• Upskilling and adaptability are critical for future careers.")
