@@ -44,3 +44,9 @@ sns.box(x="Education_Level" , y='AI_Exposure_Index')
 sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index')
 
 # NUMPY ANALYSIS
+
+# Automation Risk Numbers
+np.mean(...)
+np.max(...)
+np.min(...)
+
