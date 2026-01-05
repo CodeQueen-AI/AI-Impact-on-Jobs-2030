@@ -58,3 +58,7 @@ We identify the top 10 jobs with highest automation risk
 High salary = safe job? (zaroori nahi)
 Relationship samajhna
 This plot shows the relationship between salary and automation risk
+
+<!-- Education level vs AI exposure -->
+Education ka AI exposure pe impact
+We analyze how education level affects AI exposure
