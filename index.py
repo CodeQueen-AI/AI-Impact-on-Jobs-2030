@@ -44,9 +44,15 @@ print(df.isnull().sum())
 # plt.ylabel('Frequency')
 # plt.show()
 
+# # Top 10 Risky Jobs with Highest Automation Risk
+top_risk_jobs = df.sort_values(by='Automation_Probability_2030', ascending=False).head(10)
+plt.figure()
+sns.barplot(x='Automation_Probability_2030' , y='Job_Title' , data=top_risk_jobs)
+plt.title("Top 10 Jobs with Highest Automation Risk (2030)")
+plt.xlabel("Automation Probability")
+plt.ylabel("Job Title")
+plt.show()
 
-# # Top 10 Risky Jobs
-# top_risk_jobs = df.sort_values(...).head(10)
 
 # # Salary vs Automation Risk
 # sns.scatterplot(x='Average_Salary' , y='Automation_Probability_2030')
