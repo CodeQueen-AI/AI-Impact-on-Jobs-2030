@@ -22,7 +22,7 @@ print(df.describe())
 # Check the Missing Values
 print(df.isnull().sum())
 
-# EDA Real Analysis
+# EDA RREAL ANALYSIS
 
 # Risk Category distribution
 sns.countplot(x='Risk_Category' , data=df)
@@ -42,3 +42,5 @@ sns.box(x="Education_Level" , y='AI_Exposure_Index')
 
 # Tech Growth vs AI Exposure
 sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index')
+
+# NUMPY ANALYSIS
