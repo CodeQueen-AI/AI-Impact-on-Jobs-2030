@@ -84,12 +84,10 @@ plt.xlabel("Tech Growth Factor")
 plt.ylabel("AI Exposure Index")
 plt.show()
 
-# NUMPY BASED ANALYSIS
-
+# --------------------------------------------- NUMPY BASED ANALYSIS -------------------------------------- #
 avg_automation = np.mean(df["Automation_Probability_2030"])
 max_automation = np.max(df["Automation_Probability_2030"])
 min_automation = np.min(df["Automation_Probability_2030"])
-
 print("\n--- Automation Risk Statistics ---")
 print("Average Automation Probability:", avg_automation)
 print("Maximum Automation Probability:", max_automation)
@@ -97,8 +95,8 @@ print("Minimum Automation Probability:", min_automation)
 
 # Final Result 
 print("\n--- Key Insights from EDA ---")
-print("• AI impact varies significantly across different job roles.")
-print("• Some high-paying jobs also face automation risk.")
-print("• Education level influences AI exposure but does not eliminate risk.")
-print("• Jobs will evolve with AI rather than completely disappear.")
-print("• Upskilling and adaptability are critical for future careers.")
+print("• AI impact varies significantly across different job roles")
+print("• Some high-paying jobs also face automation risk")
+print("• Education level influences AI exposure but does not eliminate risk")
+print("• Jobs will evolve with AI rather than completely disappear")
+print("• Upskilling and adaptability are critical for future careers")
