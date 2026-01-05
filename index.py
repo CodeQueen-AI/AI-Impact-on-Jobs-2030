@@ -45,20 +45,42 @@ print(df.isnull().sum())
 # plt.show()
 
 # Top 10 Risky Jobs with Highest Automation Risk
-top_risk_jobs = df.sort_values(by='Automation_Probability_2030', ascending=False).head(10)
-plt.figure(figsize=(10,6))
-colors = ['#FF0B55', '#301CA0', '#F875AA', '#33FFF5','#33FF8C']
+# top_risk_jobs = df.sort_values(by='Automation_Probability_2030', ascending=False).head(10)
+# plt.figure(figsize=(10,6))
+# colors = ['#FF0B55', '#301CA0', '#F875AA', '#33FFF5','#33FF8C']
 
-sns.barplot(x='Automation_Probability_2030',y='Job_Title',data=top_risk_jobs,palette=colors)
-plt.title("Top 10 Jobs with Highest Automation Risk (2030)")
-plt.xlabel("Automation Probability")
-plt.ylabel("Job Title")
-plt.show()
+# sns.barplot(x='Automation_Probability_2030',y='Job_Title',data=top_risk_jobs,palette=colors)
+# plt.title("Top 10 Jobs with Highest Automation Risk (2030)")
+# plt.xlabel("Automation Probability")
+# plt.ylabel("Job Title")
+# plt.show()
 
 # Salary vs Automation Risk
-# sns.scatterplot(x='Average_Salary' , y='Automation_Probability_2030')
+# plt.figure(figsize=(10,6))
+# custom_colors = {
+#     "Low": "#33FF57",     
+#     "Medium": "#FFC300",  
+#     "High": "#FF5733"  
+# }
 
-# # Education level vs AI exposure
+# sns.scatterplot(x="Average_Salary", y="Automation_Probability_2030", hue="Risk_Category", data=df, palette=custom_colors, s=50)
+# plt.title("Average Salary vs Automation Risk")
+# plt.xlabel("Average Salary")
+# plt.ylabel("Automation Probability")
+# plt.show()
+
+# AI Exposure Index by Education Level
+plt.figure()
+sns.boxplot(
+    x="Education_Level",
+    y="AI_Exposure_Index",
+    data=df
+)
+plt.title("AI Exposure Index by Education Level")
+plt.xlabel("Education Level")
+plt.ylabel("AI Exposure Index")
+plt.show()
+
 # sns.box(x="Education_Level" , y='AI_Exposure_Index')
 
 # # Tech Growth vs AI Exposure
