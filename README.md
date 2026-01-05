@@ -1,81 +1,66 @@
-<!-- Import Libray -->
-NumPy (np) → numbers aur calculations ke liye
-Pandas (pd) → dataset read, clean, analyze
-Matplotlib (plt) → basic graphs
-Seaborn (sns) → advanced & beautiful graphs
-First, we import all required libraries for data analysis and visualization
+# AI-Impact-on-Jobs-2030 🤖💼
 
-<!-- Seaborn Theme Set -->
-Graphs clean aur professional dikhte hain
-Background grid mil jati hai
-Analysis visually easy ho jata hai
-We set a theme to make our plots visually clear
+## Overview
 
-<!-- Data Set Load -->
-CSV file read ho rahi hai
-Data DataFrame mein convert ho gaya
-Ab hum data pe analysis kar sakte hain
-We load the dataset into a Pandas DataFrame
+This project explores **how AI will change jobs by 2030**. It identifies high-risk roles, the influence of education and how salary & technology growth relate to automation.
 
-<!-- Dataset Preview -->
-Sirf pehli 5 rows dikhata hai
-Columns aur data format samajhne ke liye
-We use head() only to preview the dataset structure
 
-<!-- Dataset info check -->
-Total rows & columns
-Data types (int, float, object)
-Missing values ka idea
-info() helps us understand the structure of the dataset
+## 🔹 Introduction
 
-<!-- Statistical Summary -->
-Mean (average)
-Min / Max
-Distribution ka idea
-describe() gives a statistical summary of numerical columns
+AI is reshaping the job market
+Some jobs may be automated, some will evolve, and some will stay safe. This project uses **exploratory data analysis (EDA)** to:
 
-<!-- Check the Missing Values -->
-Kis column mein missing data hai
-Data cleaning ki zarurat hai ya nahi
-Checking missing values is an important part of EDA
+* Understand job risk categories
+* Visualize automation probabilities
+* Explore salary vs automation
+* Examine education & AI exposure
+* Study technology growth trends
 
-<!-- Risk Category distribution -->
-Kitni jobs Low / Medium / High risk mein hain
-This plot shows how AI risk is distributed across jobs
 
-<!-- # Automation probability distribution -->
-Automation ka overall trend
-Zyada jobs high risk ya low risk?
-Histogram helps us understand automation probability distribution
+## 🛠 Libraries Used
 
-<!-- Top 10 Risky Jobs -->
-Poora dataset sort ho raha hai
-Highest risk upar aa rahi hai
-Sirf top 10 select ho rahi hain
-We identify the top 10 jobs with highest automation risk
+* **NumPy** → Numbers & calculations 
+* **Pandas** → Read & analyze datasets 📊
+* **Matplotlib** → Basic plots
+* **Seaborn** → Advanced & pretty visualizations 🎨
 
-<!-- # Salary vs Automation Risk -->
-High salary = safe job? (zaroori nahi)
-Relationship samajhna
-This plot shows the relationship between salary and automation risk
 
-<!-- Education level vs AI exposure -->
-Education ka AI exposure pe impact
-We analyze how education level affects AI exposure
+## 📊 EDA Highlights
 
-<!-- Tech Growth vs AI Exposure -->
-Fast growing tech = zyada AI exposure?
-This helps us understand the role of technology growth
+* **Plot 01: Risk Category Distribution**
+  Shows how many jobs are **Low, Medium, or High risk** for automation
 
-<!-- NUmpy Analysis -->
+* **Plot 02: Automation Probability Distribution**
+  Visualizes if most jobs face **high or low automation risk**
 
-<!-- # Automation Risk Numbers -->
-Average risk
-Highest risk
-Lowest risk
-NumPy is used for numerical calculations
+* **Plot 03: Top 10 High-Risk Jobs**
+  Highlights the **most vulnerable roles** by automation probability
 
-<!-- Conclusion Print -->
-Analysis ko summarize karna
-Story complete karna
-AI will transform jobs, making skills more important
+* **Plot 04: Salary vs Automation Risk**
+  Shows that **high salary doesn’t always mean safety**
+
+* **Plot 05: AI Exposure by Education**
+  Reveals how **education level affects AI exposure** — upskilling matters! 🎓
+
+* **Plot 06: Tech Growth vs AI Exposure**
+  Demonstrates how **fast-growing technology increases AI exposure**.
+
+
+## 💡 Key Insights
+
+* ⚡ **AI impact varies** across different jobs
+* **High-paying jobs can still be at risk**
+* 🎓 **Education helps, but doesn’t guarantee safety**
+*  **Jobs will evolve, not disappear completely**
+* 🚀 **Upskilling & adaptability are critical** for the future
+
+
+## ✅ Conclusion
+
+AI will **transform the workforce** by 2030. This project helps identify:
+
+* Roles at high risk
+* How salary, education, and tech growth relate to automation
+* The importance of **learning new skills** to stay relevant
+
+
