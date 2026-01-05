@@ -7,7 +7,7 @@ import seaborn as sns
 # Seaborn Theme Set
 sns.set_theme(style = 'whitegrid')
 
-# Load dataset
+# Dataset Load
 df = pd.read_csv('AI_Impact_on_Jobs_2030.csv')
 
 # DataSet Preview
@@ -26,15 +26,15 @@ print(df.describe())
 print('Missing Values Check')
 print(df.isnull().sum())
 
-# --------------------------EDA RREAL ANALYSIS-----------------------------
+# -----------------------------------------EDA RREAL ANALYSIS------------------------------------ #
 
-# Risk Category Distribution
-# plt.figure()
-# sns.countplot(x='Risk_Category', data=df, palette=["#FDB5CE", "#FF0087", '#00F7FF'])
-# plt.title('AI Job Risk Category Distribution 2030')
-# plt.xlabel('Risk Category')
-# plt.ylabel('Frequency')
-# plt.show()
+# Plot 01 : Risk Category Distribution
+plt.figure()
+sns.countplot(x='Risk_Category', data=df, palette=["#FDB5CE", "#FF0087", '#00F7FF'])
+plt.title('AI Job Risk Category Distribution 2030')
+plt.xlabel('Risk Category')
+plt.ylabel('Frequency')
+plt.show()
 
 # Automation probability distribution
 # plt.figure()
