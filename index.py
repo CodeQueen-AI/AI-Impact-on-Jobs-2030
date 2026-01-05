@@ -44,14 +44,33 @@ print(df.isnull().sum())
 # plt.ylabel('Frequency')
 # plt.show()
 
-# # Top 10 Risky Jobs with Highest Automation Risk
+# Top 10 Risky Jobs with Highest Automation Risk
+# top_risk_jobs = df.sort_values(by='Automation_Probability_2030', ascending=False).head(10)
+# plt.figure()
+# sns.barplot(x='Automation_Probability_2030' , y='Job_Title' , data=top_risk_jobs)
+# plt.title("Top 10 Jobs with Highest Automation Risk (2030)")
+# plt.xlabel("Automation Probability")
+# plt.ylabel("Job Title")
+# plt.show()
+
 top_risk_jobs = df.sort_values(by='Automation_Probability_2030', ascending=False).head(10)
-plt.figure()
-sns.barplot(x='Automation_Probability_2030' , y='Job_Title' , data=top_risk_jobs)
+
+plt.figure(figsize=(10,6))
+# Custom colors list
+colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FF33A6', '#33FFF5', '#F5FF33', '#FF8C33', '#8C33FF', '#33FF8C']
+
+sns.barplot(
+    x='Automation_Probability_2030',
+    y='Job_Title',
+    data=top_risk_jobs,
+    palette=colors  # different colors for each bar
+)
+
 plt.title("Top 10 Jobs with Highest Automation Risk (2030)")
 plt.xlabel("Automation Probability")
 plt.ylabel("Job Title")
 plt.show()
+
 
 
 # # Salary vs Automation Risk
