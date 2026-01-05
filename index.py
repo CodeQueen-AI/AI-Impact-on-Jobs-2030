@@ -76,13 +76,13 @@ plt.xlabel("Education Level")
 plt.ylabel("AI Exposure Index")
 plt.show()
 
-# Tech Growth vs AI Exposure
-# plt.figure()
-# sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index' , data=df)
-# plt.title("Tech Growth Factor vs AI Exposure Index")
-# plt.xlabel("Tech Growth Factor")
-# plt.ylabel("AI Exposure Index")
-# plt.show()
+# Plot 06 : Tech Growth vs AI Exposure
+plt.figure()
+sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index' , data=df)
+plt.title("Tech Growth Factor vs AI Exposure Index")
+plt.xlabel("Tech Growth Factor")
+plt.ylabel("AI Exposure Index")
+plt.show()
 
 # NUMPY BASED ANALYSIS
 
