@@ -29,24 +29,21 @@ print(df.isnull().sum())
 # --------------------------EDA RREAL ANALYSIS-----------------------------
 
 # Risk Category Distribution
-plt.figure()
-sns.countplot(x='Risk_Category', data=df, palette=["#FDB5CE", "#FF0087", '#00F7FF'])
-plt.title('AI Job Risk Category Distribution 2030')
-plt.xlabel('Risk Category')
-plt.ylabel('Frequency')
-plt.show()
-
-
 # plt.figure()
-# sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
-# plt.title('Automation Probability Distribution by 2030')
-# plt.xlabel('Automation Probability')
+# sns.countplot(x='Risk_Category', data=df, palette=["#FDB5CE", "#FF0087", '#00F7FF'])
+# plt.title('AI Job Risk Category Distribution 2030')
+# plt.xlabel('Risk Category')
 # plt.ylabel('Frequency')
 # plt.show()
 
+# Automation probability distribution
+plt.figure()
+sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
+plt.title('Automation Probability Distribution by 2030')
+plt.xlabel('Automation Probability')
+plt.ylabel('Frequency')
+plt.show()
 
-# # Automation probability distribution
-# sns.histplot(df['Automation_Probability_2030'])
 
 # # Top 10 Risky Jobs
 # top_risk_jobs = df.sort_values(...).head(10)
