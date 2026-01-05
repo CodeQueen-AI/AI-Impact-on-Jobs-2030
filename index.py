@@ -36,13 +36,13 @@ plt.xlabel('Risk Category')
 plt.ylabel('Frequency')
 plt.show()
 
-# Automation probability distribution
-# plt.figure()
-# sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
-# plt.title('Automation Probability Distribution by 2030')
-# plt.xlabel('Automation Probability')
-# plt.ylabel('Frequency')
-# plt.show()
+# Plot 02 : Automation probability distribution
+plt.figure()
+sns.histplot(df['Automation_Probability_2030'], bins=10, kde=True)
+plt.title('Automation Probability Distribution by 2030')
+plt.xlabel('Automation Probability')
+plt.ylabel('Frequency')
+plt.show()
 
 # Top 10 Risky Jobs with Highest Automation Risk
 # top_risk_jobs = df.sort_values(by='Automation_Probability_2030', ascending=False).head(10)
