@@ -15,6 +15,7 @@ print('First 5 Rows of the Dataset:')
 print(df.head())
 
 # Dataset Info check
+print('Dataset Information:')
 print(df.info())
 
 # Statistical Summary
