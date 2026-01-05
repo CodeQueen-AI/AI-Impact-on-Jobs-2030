@@ -39,3 +39,6 @@ sns.scatterplot(x='Average_Salary' , y='Automation_Probability_2030')
 
 # Education level vs AI exposure
 sns.box(x="Education_Level" , y='AI_Exposure_Index')
+
+# Tech Growth vs AI Exposure
+sns.scatterplot(x='Tech_Growth_Factor' , y='AI_Exposure_Index')
