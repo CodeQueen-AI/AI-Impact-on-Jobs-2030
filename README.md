@@ -67,3 +67,10 @@ We analyze how education level affects AI exposure
 Fast growing tech = zyada AI exposure?
 This helps us understand the role of technology growth
 
+<!-- NUmpy Analysis -->
+
+<!-- # Automation Risk Numbers -->
+Average risk
+Highest risk
+Lowest risk
+NumPy is used for numerical calculations
