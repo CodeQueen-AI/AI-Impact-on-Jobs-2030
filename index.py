@@ -30,9 +30,9 @@ print(df.isnull().sum())
 
 # Risk Category Distribution
 plt.figure()
-sns.countplot(x='Risk_Category' , data=df)
-plt.title('AI Job Risk Category Distibution 2030')
-plt.xlabel('Automation Probability')
+sns.countplot(x='Risk_Category', data=df, palette=["#FDB5CE", "#FF0087", '#00F7FF'])
+plt.title('AI Job Risk Category Distribution 2030')
+plt.xlabel('Risk Category')
 plt.ylabel('Frequency')
 plt.show()
 
