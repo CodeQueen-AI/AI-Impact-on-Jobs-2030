@@ -74,3 +74,8 @@ Average risk
 Highest risk
 Lowest risk
 NumPy is used for numerical calculations
+
+<!-- Conclusion Print -->
+Analysis ko summarize karna
+Story complete karna
+AI will transform jobs, making skills more important
